@@ -1,0 +1,307 @@
+# Paper Information & Metadata
+paper_title: "TODO: Paper Title"
+
+# Authors List
+# Each author can have name, superscripts (e.g., "1", "*1,3"), link, and email (optional)
+authors:
+  - name: "TODO: Author name 1"
+    superscript: "1"
+    url: "#"
+  - name: "TODO: Author name 2"
+    superscript: "*1,3"
+    url: "#"
+  - name: "TODO: Author name 3"
+    superscript: "*2"
+    url: "#"
+  - name: "TODO: Author name 4"
+    superscript: "*1"
+    url: "#"
+  - name: "TODO: Author name 5"
+    superscript: "2"
+    url: "#"
+  - name: "TODO: Author name 6"
+    superscript: "1"
+    url: "#"
+
+# Affiliations List
+affiliations:
+  - index: "1"
+    name: "TODO: University name 1"
+  - index: "2"
+    name: "TODO: University name 2"
+  - index: "3"
+    name: "TODO: University name 3"
+
+# Emails List
+emails:
+  - index: "1"
+    email: "TODO:email1@email.com"
+  - index: "2"
+    email: "TODO:email2@email.com"
+
+# Equal Contribution Note (Set empty "" or remove if not applicable)
+equal_contribution_note: "*Equal Contribution"
+
+# Conference or Presentation Badges / Notes
+# Possible icons to use: 📌 (Pin), 📜 (Paper), 🏆 (Award), 🎤 (Talk), ⭐ (Star), 📍 (Location), 📢 (Announcement), 🎓 (Academic), 💡 (Idea), 📊 (Results)
+conference_badges:
+  - "📌 Conference on TODO: Conference name, 2023 (Oral Talk)"
+  - "📌 Presented at TODO: Conference name 2024, Yokohama, Japan."
+
+# Header Note (Optional extra note after conference badges, set "" or remove if not needed)
+header_note: "TODO: Add custom header note if needed (or leave empty)"
+
+# Action Buttons / Resources
+# All link buttons automatically open in a new tab (_blank)
+# Optional: Set 'color' for custom button background color (leave empty or remove for default color)
+buttons:
+  - label: "Paper"
+    icon: "📄"
+    url: "#"
+    color: "" # Custom color (e.g., "#2c3e50")
+  - label: "Videos"
+    icon: "🎥"
+    url: "#"
+    color: ""
+  - label: "Code"
+    icon: "💻"
+    url: "#"
+    color: ""
+  - label: "Dataset"
+    icon: "📊"
+    url: "#"
+    color: ""
+  - label: "Model"
+    icon: "🤖"
+    url: "#"
+    color: ""
+
+# Toggle BibTeX action button (true to display, false to hide)
+show_bibtex_button: true
+bibtex_button_icon: "📜"
+bibtex_button_color: "" # Custom background color for BibTeX button
+
+# Paper Content Sections
+# Sections will be rendered in the order defined below.
+# If a section is removed from here, it will automatically disappear from the page and navbar.
+sections:
+  - id: "abstract"
+    title: "Abstract"
+    nav_label: "Abstract"
+    content: "TODO: Add Abstract"
+    components:
+      - type: "youtube_video"
+        title: "Demo Video"
+        url: "https://www.youtube.com/embed/ysFav0b472w?si=Rxxp3R6_tkBXAEmP"
+        description: "TODO: This is the short explanation paragraph of the video. Add your paragraph here if required"
+
+  - id: "introduction"
+    title: "Introduction"
+    nav_label: "Introduction"
+    content: "TODO: Add Introduction"
+
+  - id: "methodology"
+    title: "Methodology"
+    nav_label: "Methodology"
+    content: "TODO: Add Methodology Overview"
+    list_type: "bullet" # Options: bullet, number, check, arrow, star, circle, square, none
+    list:
+      - "TODO Overview Step 1"
+      - "TODO Overview Step 2"
+    subsections:
+      - title: "1. Data Preprocessing & Pipeline"
+        content: "TODO: Add detailed explanation of preprocessing pipeline..."
+        list_type: "check"
+        list:
+          - "Data cleaning & normalization"
+          - "Feature extraction & scaling"
+      - title: "2. Model Architecture & Training"
+        content: "TODO: Add detailed explanation of model architecture..."
+
+  - id: "results"
+    title: "Results"
+    nav_label: "Results"
+    content: "TODO: Add Results"
+    list_type: "bullet" # Options: bullet, number, check, arrow, star, circle, square, none
+    list:
+      - "TODO"
+      - "TODO"
+    components:
+      - type: "image_carousel"
+        title: "Image Gallery"
+        images:
+          - "Assets/Photo1.jpg"
+          - "Assets/Photo2.jpg"
+          - "Assets/Photo3.jpg"
+          - "Assets/Photo4.jpg"
+          - "Assets/Photo5.jpg"
+          - "Assets/Photo6.jpg"
+          - "Assets/Photo7.jpg"
+          - "Assets/Photo8.jpg"
+      - type: "video_carousel"
+        title: "Video Gallery"
+        videos:
+          - "https://www.youtube.com/embed/Bhg3uOx9ZPw?si=4Ie__ntcTSvRRi4y"
+          - "https://www.youtube.com/embed/xjRALKy6Ajw?si=EMrMe_v9fXOjhi_J"
+          - "https://www.youtube.com/embed/aaTUS5Aa8F0?si=NUvuwq8-SzC5RuqQ"
+          - "https://www.youtube.com/embed/JficcrhnO78?si=8SryP_KFQ0orNyMt"
+          - "https://www.youtube.com/embed/kEdr0ARq48A?si=ADLxnzCBkTDQm28o"
+          - "https://www.youtube.com/embed/v_ulHMfDUco?si=0fJGN4AmWj_zP-Ik"
+      - type: "youtube_video"
+        title: "Demo Video"
+        url: "https://www.youtube.com/embed/ysFav0b472w?si=Rxxp3R6_tkBXAEmP"
+      - type: "youtube_playlist"
+        title: "Demo Videos List"
+        url: "https://www.youtube.com/embed/videoseries?si=Alenj7M9_gg7Xv49&amp;list=PL95lT3XlM14SgZHmmKn1mGSAAQc8ycq8v"
+      - type: "custom_html"
+        title: "Custom HTML Component"
+        html: |
+          <div style="background: #f8f9fa; border-left: 4px solid #3498db; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">
+            <p><strong>💡 Tip:</strong> You can embed custom HTML code (alerts, tables, badges, or custom widgets) directly using the <code>custom_html</code> component!</p>
+          </div>
+
+  - id: "conclusion"
+    title: "Conclusion"
+    nav_label: "Conclusion"
+    content: "TODO: Add Conclusion"
+
+  - id: "bibtex"
+    title: "BibTeX"
+    nav_label: "BibTeX"
+    citation: |
+      @inproceedings{TODO: YourPaperCitation,
+        title={TODO: Paper Title},
+        author={[TODO: Author Names]},
+        booktitle={[TODO: Conference Name]},
+        year={TODO: 2024},
+        pages={[pages]}
+      }
+
+  - id: "acknowledgement"
+    title: "Acknowledgement"
+    nav_label: "Acknowledgement"
+    content: "TODO: Add Acknowledgement if applicable or remove this"
+
+# Footer Info
+footer:
+  copyright: "© 2024 [TODO: Add Name or University]. All rights reserved."
+  footer_note: "TODO: Add custom footer note if needed (e.g., disclaimer or grant disclosure)"
+
+# =========================================================================================
+# UI & BUTTON SETTINGS
+# =========================================================================================
+settings:
+  # Page Content Max Width (Default is 1024px. Set e.g. "1200px", "900px", or leave empty "" for 1024px)
+  max_width: "1024px"
+
+  # Top Navigation Bar Options
+  nav_shadow: true # Set to true to show a subtle box-shadow under top navbar, or false for no shadow
+  nav_scroll_highlight: true # Set to true to highlight active navbar section link while scrolling
+  nav_highlight_color: "" # Optional custom highlight color (e.g., "#3498db", "#e74c3c" or leave empty "" for default)
+
+  # Dark / Light Mode Toggle Button
+  theme_toggle_text: "Toggle Dark Mode"
+  theme_toggle_color: "" # Optional custom color (e.g., "#517599" or leave empty for CSS default)
+
+  # Copy BibTeX Button
+  copy_bibtex_text: "Copy to Clipboard"
+  copy_bibtex_icon: "📋"
+  copy_bibtex_color: "" # Optional custom color (e.g., "#517599" or leave empty for CSS default)
+
+  # Scroll To Top Button
+  scroll_top_text: "⬆"
+  scroll_top_color: "" # Optional custom color (e.g., "#517599" or leave empty for CSS default)
+
+# =========================================================================================
+# COMPONENT REFERENCE GUIDE (Copy & paste any component below into any section above)
+# =========================================================================================
+#
+# 1. Single YouTube Video:
+# ------------------------
+#      - type: "youtube_video"
+#        title: "Demo Video"
+#        url: "https://www.youtube.com/embed/ysFav0b472w?si=Rxxp3R6_tkBXAEmP"
+#        description: "Short explanation of the video."
+#
+# 2. YouTube Video Playlist / List:
+# ---------------------------------
+#      - type: "youtube_playlist"
+#        title: "Demo Videos List"
+#        url: "https://www.youtube.com/embed/videoseries?si=Alenj7M9_gg7Xv49&list=PL95lT3XlM14SgZHmmKn1mGSAAQc8ycq8v"
+#
+# 3. Image Carousel / Gallery:
+# ----------------------------
+#      - type: "image_carousel"
+#        title: "Image Gallery"
+#        images:
+#          - "Assets/Photo1.jpg"
+#          - "Assets/Photo2.jpg"
+#          - "Assets/Photo3.jpg"
+#          - "Assets/Photo4.jpg"
+#
+# 4. Video Carousel / Gallery:
+# ----------------------------
+#      - type: "video_carousel"
+#        title: "Video Gallery"
+#        videos:
+#          - "https://www.youtube.com/embed/Bhg3uOx9ZPw?si=4Ie__ntcTSvRRi4y"
+#          - "https://www.youtube.com/embed/xjRALKy6Ajw?si=EMrMe_v9fXOjhi_J"
+#          - "https://www.youtube.com/embed/aaTUS5Aa8F0?si=NUvuwq8-SzC5RuqQ"
+#
+# 5. List Component / Custom Point Style Component:
+# ------------------------------------------------
+# Available Point Types (list_type):
+#   - "bullet" / "disc"    : Standard bullet points (•)
+#   - "number" / "decimal" : Numbered list (1, 2, 3...)
+#   - "check" / "checkmark": Checkmarks (✅)
+#   - "arrow"              : Arrows (➡️)
+#   - "star"               : Stars (⭐)
+#   - "circle"             : Hollow circles (◦)
+#   - "square"             : Filled squares (▪)
+#   - "none"               : Plain text list without bullets
+#
+# As a nested component inside any section:
+#      - type: "list"
+#        title: "Key Highlights"
+#        list_type: "check" # Choose point style here
+#        list:
+#          - "Highlight 1"
+#          - "Highlight 2"
+#
+# Or directly at the section level:
+#  - id: "custom_section"
+#    title: "Custom Section Title"
+#    nav_label: "Custom Section"
+#    content: "Add your paragraph text here."
+#    list_type: "number" # Choose point style here
+#    list:
+#      - "First step"
+#      - "Second step"
+#
+# 6. Custom HTML Component:
+# -------------------------
+#      - type: "custom_html"
+#        title: "Custom HTML Component"
+#        html: |
+#          <div style="background: #eef6ff; padding: 12px; border-radius: 6px;">
+#            <p>Add custom HTML code, tables, or widgets here!</p>
+#          </div>
+#
+# 7. Subsections under any Section:
+# ---------------------------------
+#  - id: "methodology"
+#    title: "Methodology"
+#    nav_label: "Methodology"
+#    content: "Overview paragraph text"
+#    subsections:
+#      - title: "1. Subsection Title"
+#        content: "Subsection paragraph text."
+#        list_type: "check"
+#        list:
+#          - "Point 1"
+#          - "Point 2"
+#        components:
+#          - type: "youtube_video"
+#            title: "Subsection Demo Video"
+#            url: "https://www.youtube.com/embed/ysFav0b472w"
+# =========================================================================================
